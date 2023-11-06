@@ -1,0 +1,12 @@
+version: '3'
+services:
+  spring-img: # Custom container name
+    image: gradlespring:latest
+    ports:
+      - "8080:8080"
+    volumes:
+      - spring-volume:/app/src/main/resources/images # Custom volume name
+
+volumes:
+  spring-volume: # Custom named volume
+
